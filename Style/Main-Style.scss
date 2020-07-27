@@ -1,0 +1,156 @@
+$main-color: black;
+$font-color: green;
+
+
+@font-face {
+    font-family: "Fallout";
+    src: url("/fonts/fallout.woff") format("woff"),
+         url("/fonts/fallout.tff") format("tff");
+  }
+
+
+body{
+
+    background-color: $main-color;
+    color: $font-color;
+    font-family: "Fallout";
+    margin: 0;
+    display: flex;
+
+    nav{
+        width: 210px;
+        height: 830px;
+        border: 30px solid transparent;
+        border-image: url("images/NAV-BORDER.png") 30 round;
+        z-index: 15;
+        position: relative;
+        
+
+        .nav-element{
+            z-index: -1;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            
+            
+
+            .nav-element-position{
+                margin: 1px;
+
+                img{
+                    
+                    width: 140px;
+                    height: 35px;
+                    
+                }
+            }
+        }
+        #head-img{
+            top: -12px;
+            left: -5px;
+                img{
+                    width: 220px;
+                    height: 150px;
+                    cursor: default;
+                }
+        }
+        #up-panel{
+           
+            top: 150px;
+            left:-15px;
+            width: 239px;
+            height: 210px;
+            background-image:url("images/grid.jpg");
+            position: relative;
+
+            audio{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 30px;
+                background-color: #95B9C7;
+                }
+
+            #nav-element-CRtxt{
+                display: block;
+                position: absolute;
+                text-align: right;
+                bottom: 0;
+                right: 5px;
+            }
+        }
+        #menu{ 
+            top: 365px;
+            left: -25px;
+            width: 255px;
+            height: 235px;
+            background-image: url("/Style/images/2222.png");
+            background-size: 255px 235px;
+            background-repeat: no-repeat;
+        }
+
+        #radio-img{
+            top:590px;
+            left: -25px;;
+                img{
+                    width: 250px;
+                    height: 270px;
+                    cursor: default;
+            }
+        }
+    }
+
+
+    #content-container{
+        width: 70%;
+        height: auto;
+        margin-left: 10px;
+        
+            header{
+                width: 100%;
+                height: 10%;
+                border: 30px solid transparent;
+                border-image: url("images/NAV-BORDER.png") 30 round;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                #acces{
+                    font-size: 35px;
+                    padding-top: 10px;
+                    
+                    
+                }
+
+                #head-text{
+                    font-size: 25px;
+                    padding-top: 10px;
+                    border-bottom: 2px solid $font-color;
+                    text-align: center;
+                    width: 33%;
+                    height: 27px;
+                    
+                }
+
+
+                #VT-logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+            }       
+
+             main{
+                width: 100%;
+                height: 80%;
+                border: 30px solid transparent;
+                border-image: url("images/NAV-BORDER.png") 30 round;
+            }
+
+    }
+
+}
+
