@@ -38,11 +38,18 @@ body{
 
             .nav-element-position{
                 margin: 1px;
+                
 
-                img{
+                .buttontxt{
                     
-                    width: 140px;
+                    width: 105px;
                     height: 35px;
+                    
+                }
+
+                .buttonNav{
+                    width: 30px;
+                    height:33px;
                     
                 }
             }
@@ -71,7 +78,9 @@ body{
                 left: 0;
                 width: 100px;
                 height: 30px;
-                background-color: #95B9C7;
+                background-color: #111e24;
+                color: #a0276e;
+                border-color: $font-color ;
                 }
 
             #nav-element-CRtxt{
@@ -148,6 +157,12 @@ body{
                 height: 80%;
                 border: 30px solid transparent;
                 border-image: url("images/NAV-BORDER.png") 30 round;
+
+                iframe{
+                    width:100%;
+                    height: 100%;
+                    border: none;
+                }
             }
 
     }
