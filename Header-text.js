@@ -5,16 +5,16 @@ var i = 1;                  //  set your counter to 1
 function myLoop() {         //  create a loop function
   setTimeout(function() {   //  call a 3s setTimeout when the loop is called
     
-var a1 = "Woda dziwki i lasery ";
-var b1 = "Niech zyje zbrodniczy rezim Majora Jabota";
+var a1 = "Wóda dziwki i lasery ";
+var b1 = "Niech żyje zbrodniczy reżim Majora Jabota";
 var c1 = "Resistanse is futile";
 var d1 = "Piwo jest dobre jakie jest";
-var e1 = "Zujcu jestesmy w domu";
+var e1 = "Żujcu jestesmy w domu";
 var f1 = "Dyszka";
 var g1 = "Bob zrobil to pierwszy";
-var h1 = "W pszyszlym roku drozej o 100zł ";
-var i1 = "Od specjala puchna jaja";
-var j1 = "Co krecisz?"
+var h1 = "W przyszłym roku drożej o 100zł ";
+var i1 = "Od specjala puchną jaja";
+var j1 = "Co kręcisz?"
 
 var txt_contener = document.getElementById("head-text");
 let wynik= Math.floor((Math.random() * 10) + 1);
