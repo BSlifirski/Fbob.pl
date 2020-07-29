@@ -9,55 +9,13 @@ $font-color: #00CC00;
   }
 
 
-/*ANIMACJA TEST TYMCZASOWY DO NIEDOSTEPNYCH*/
-#parent {
-    height: 40px;
-    white-space: nowrap;
-    overflow: hidden; 
-    font-family: "Fallout";  
-    font-size: 20px;
-    color: $font-color;
-    position: relative;
-  }
-  
-  #border {
-    border-bottom: solid 3px rgba(0,255,0,.75);
-    position: absolute;
-    right: -7px;
-    width: 20px;
-  }
-  
-  /* Animation */
-  #parent {
-    animation: animated-text 1.7s steps(30,end) 1s 1 normal both
-  }
-  
-  #border {
-     animation: animated-cursor 800ms steps(30,end) infinite;
-  }
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 140px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-bottom-color: rgba(0,255,0,.75);}
-    to{border-bottom-color: transparent;}
-  }
-
   /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
 }
  
 /* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+::-webkit-scrollbar-track { 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -67,10 +25,9 @@ $font-color: #00CC00;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background:$font-color; 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
+	background: $font-color; 
 }
 body{
 
@@ -101,9 +58,8 @@ body{
             justify-content: center;
             text-align: center;
             font-family: "Fallout";
-            
-            
 
+            
             .nav-element-position{
                 margin: 1px;
                 
@@ -116,7 +72,7 @@ body{
                 }
 
                 .buttonNav{
-                    width: 30px;
+                    width: 25px;
                     height:33px;
                     
                 }
@@ -139,6 +95,11 @@ body{
             height: 210px;
             background-image:url("images/grid.jpg");
             position: relative;
+
+            #clock{
+                font-size: 35px;
+                margin-top: -40px;
+            }
 
             audio{
                 position: absolute;
@@ -189,6 +150,7 @@ body{
             .header_content{
                 font-family: "Fallout", 'Alegreya Sans', sans-serif;
                 font-size: 40px;
+                
             }
         
         
@@ -208,11 +170,11 @@ body{
                 }
 
                 #head-text{
-                    font-size: 25px;
+                    font-size: 50px;
                     padding-top: 10px;
                     padding-bottom: 5px;
                     border-bottom: 1px solid $font-color;
-                    text-align: center;
+                    text-align: left;
                     width: 33%;
                     height: 27px;
                     

@@ -5,6 +5,7 @@
 <meta name="author" content="Bartłomiej Ślifirski">
 <title>Fbob.pl</title>
 <link rel="stylesheet" href="/Style/Main-Style.css">
+<link rel="stylesheet" href="/Style/Text animation medium.css">
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap" rel="stylesheet">
 
 </head>
@@ -16,7 +17,7 @@
         </div>
 
         <div class="nav-element" id="up-panel">
-            <span></span>
+            <span id="clock"></span>
             <span><audio controls loop>
                 <source src="falloutsound.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -66,7 +67,7 @@
              </div>
 
              <div class="header_content" id="head-text">
-                 <span></span>
+                 <div id="Anime_txt_parent">Assecc_quote_of_day<div id="Anime_txt_border"></div></div>
             </div>
 
             <div class="header_content" id="VT-logo">
@@ -76,7 +77,7 @@
          </header>
 
          <main>
-            <iframe src="/temporary/display_main.html" name="iFrame">
+            <iframe id="iframe" src="/temporary/display_main.html" name="iFrame">
                 
             </iframe>
          </main>
@@ -85,6 +86,7 @@
     <script  type="text/javascript" src="Header-text.js"></script>
     <script  type="text/javascript" src="buttons.js"></script>
     <script  type="text/javascript" src="Function-Acces_.js"></script>
+    <script  type="text/javascript" src="Clock.js"></script>
 </body>
 
 

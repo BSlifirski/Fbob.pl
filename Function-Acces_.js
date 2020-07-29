@@ -4,11 +4,10 @@ window.onload = function(){
     var accesArmory = document.getElementById('button_7');
     var accesOther = document.getElementById('button_9');
     var acces = document.getElementById('acces');
-    console.log('lol')
 
 
     function News(){
-        acces.innerHTML = "News"
+        acces.innerHTML = "Main"
     };
     function Crew(){
         acces.innerHTML = "Crew"

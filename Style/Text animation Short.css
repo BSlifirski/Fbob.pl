@@ -1,0 +1,40 @@
+/*ANIMACJA TEST TYMCZASOWY DO NIEDOSTEPNYCH*/
+#Anime_txt_parent {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: "Fallout";  
+    font-size: 20px;
+    color: #00CC00;
+    position: relative;
+  }
+  
+  #Anime_txt_border {
+    border-bottom: solid 3px #00CC00;
+    position: absolute;
+    right: -7px;
+    width: 20px;
+  }
+  
+  /* Animation */
+  #Anime_txt_parent {
+    animation: animated-text 1.7s steps(30,end) 1s 1 normal both
+  }
+  
+  #Anime_txt_border {
+     animation: animated-cursor 800ms steps(30,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 130px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-bottom-color: #00CC00;}
+    to{border-bottom-color: transparent;}
+  }

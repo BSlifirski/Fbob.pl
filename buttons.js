@@ -1,5 +1,4 @@
 $(document).ready(function(){
-   console.log('jestem')
 
    $("#button_1")
    .mouseenter(function() {
